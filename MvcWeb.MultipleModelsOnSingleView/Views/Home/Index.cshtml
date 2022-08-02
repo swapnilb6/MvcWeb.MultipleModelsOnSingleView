@@ -1,0 +1,20 @@
+﻿@using MvcWeb.MultipleModelsOnSingleView.Models
+@model IndexViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<h1>Employee List</h1>
+@foreach (var employee in Model.employees)
+{
+    <h3>@employee.Name</h3>
+}
+
+<b>
+</b>
+<br /> <h1>Student List</h1>
+@foreach (var student in Model.students)
+{
+    <h3>@student.Name</h3>
+}
